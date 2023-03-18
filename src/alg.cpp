@@ -22,7 +22,7 @@ int cbinsearch(int *arr, int size, int value) {
 
             int leftside = middle - 1;
             while ((leftside >= 0) && (arr[leftside] == value)) {
-                leftside += 1;
+                leftside -= 1;
                 count +=1;
             }
             return count;
